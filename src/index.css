@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  min-width: 320px;
+  min-height: 100vh;
+  color: #272D3A;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: unset;
+}
+
+.custom-transition {
+  transition: all ease .3s;
+}
+
+[class^="ant-layout"],
+[class*=" ant-layout"] {
+  font-family: unset;
+}
+
+.animate{
+  /* transform: translateX(10%);
+  opacity: 0; */
+  transition: all ease-in .5s;
+}
+
+.l-to-r-animation {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.r-to-l-animation {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@keyframes l-to-r {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes r-to-l {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
